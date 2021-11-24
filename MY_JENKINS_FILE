@@ -6,6 +6,8 @@ pipeline {
                 echo 'THIS IS MY NEW JENKINS FILE.......'
                 echo '.........HELLO WORLD.........'
 				sh 'printenv'
+                echo "$env.BUILD_NUMBER"
+                echo "$env.GIT_BRANCH"
             }
         }
     }
